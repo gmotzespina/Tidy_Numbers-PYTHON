@@ -1,14 +1,12 @@
-#from pytictoc import TicToc
-
 numbers = []
 numberOfRepeats = 0
 i = 0
 #t = TicToc()
 
 
-testCases = input("")
+testCases = int(input())
 while testCases > 0:
-    numbers.append(input(""));
+    numbers.append(int(input()));
     i += 1
     testCases -= 1
 
@@ -33,7 +31,7 @@ for originalNumber in numbers:
         maxTidyNumber = originalNumber
         originalNumber -= delta+1
 
-    print 'Case #'+ str(case) + ": "+str(maxTidyNumber)
+    print('Case #'+ str(case) + ": "+str(maxTidyNumber))
     case += 1
     #print('Number of attempts: '+str(numberOfRepeats))
 #t.toc()
